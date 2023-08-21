@@ -1,0 +1,50 @@
+﻿@model List<EIP_A.Models.Product>
+@{
+}
+<div>
+    <br />
+    <h2 class="fw-bold mb-2 text-uppercase text-center">Product List</h2>
+</div>
+<br />
+<div>
+    <div>
+        <a type="button" asp-area="" asp-controller="Products" asp-action="Create" class="btn btn-outline-secondary text-primary">Create New</a>
+    </div>
+</div>
+<br />
+<div class="container">
+    <table class="table table-striped">
+        <thead class="bg-dark text-white fs-6 text-center">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Cost Price</th>
+                <th>Selling Price</th>
+                <th>Created At</th>
+                <th>Created By</th>
+                <th>Modeified At</th>
+                <th>Modified By</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            @foreach( var product in Model)
+            {
+                <tr>
+                    <td>P-@product.Id</td>
+                    <td>@product.ProductName</td>
+                    <td>@product.Quantity</td>
+                    <td>@product.CostPrice</td>
+                    <td>@product.SellingPrice</td>
+                    <td>@product.CreatedAt</td>
+                    <td>@product.CreatedBy</td>
+                    <td>@product.ModifiedAt</td>
+                    <td>@product.ModifiedBy</td>
+                    <td><a asp-controller="Products" asp-action="View" asp-route-id="@product.Id">View</a></td>
+                </tr>
+                
+            }
+        </tbody>
+    </table>
+</div>

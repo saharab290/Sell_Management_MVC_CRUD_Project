@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EIP-A", "EIP-A\EIP-A.csproj", "{0284953B-28A4-4824-83B4-5AF1EF1A0952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0284953B-28A4-4824-83B4-5AF1EF1A0952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0284953B-28A4-4824-83B4-5AF1EF1A0952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0284953B-28A4-4824-83B4-5AF1EF1A0952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0284953B-28A4-4824-83B4-5AF1EF1A0952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {155FE3B7-B63C-4D84-84A7-5702727F92BE}
+	EndGlobalSection
+EndGlobal

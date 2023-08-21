@@ -1,0 +1,44 @@
+﻿@model EIP_A.Models.CreateProduct
+@{
+}
+<div>
+    <br />
+    <h2 class="fw-bold mb-2 text-uppercase text-center">Add Product Information</h2>
+</div>
+<div class="container w-75 justify-content-center align-items-center">
+    <div>
+        <a type="button" asp-area="" asp-controller="Products" asp-action="Index" class="btn btn-outline-secondary text-primary">Product List</a>
+    </div>
+    <form method="post" action="Create" class="mt-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Product Name</label>
+            <select class="form-select" aria-label="Product Name" type="text" class="form-control" asp-for="ProductName" required>
+                <option value="" selected>Select Here...</option>
+                <option value="MacBook M1">MacBook</option>
+                <option value="R15 v3">R15</option>
+                <option value="Honda CBR">Honda CBR</option>
+                <option value="Asus Vivobook">Asus Vivobook</option>
+                <option value="Oneplus 9">Oneplus 9</option>
+                <option value="Iphone 14">Iphone 14</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Quantity</label>
+            <input type="text" class="form-control" asp-for="Quantity" required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Cost Price</label>
+            <input type="text" class="form-control" asp-for="CostPrice" required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Selling Price</label>
+            <input type="text" class="form-control" asp-for="SellingPrice" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-danger text-center justify-content-center">Reset</button>
+    </form>
+
+
+</div>
+

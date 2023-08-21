@@ -1,0 +1,74 @@
+﻿@model List<EIP_A.Models.Sell>
+@{
+}
+<div>
+    <br />
+    <h2 class="fw-bold mb-2 text-uppercase text-center">Reports View</h2>
+</div>
+@using (Html.BeginForm("Index", "Reports", FormMethod.Post))
+{
+    <div class="container bg-light p-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="start" class="form-label">Start Date</label>
+                <input class="form-control" type="date" id="start" name="startDate" value="@ViewBag.StartDate" />
+            </div>
+            <div class="col-md-6">
+                <label for="end" class="form-label">End Date</label>
+                <input class="form-control" type="date" id="end" name="endDate" value="@ViewBag.EndDate" />
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-info w-25" type="submit" asp-action="Index">Search</button>
+        </div>
+    </div>
+}
+
+
+<br />
+<div class="container">
+    <table class="table table-striped">
+        <thead class="bg-dark text-white text-center">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Client Name</th>
+                <th>Quantity</th>
+                <th>Created At</th>
+                <th>Created By</th>
+                <th>Modeified At</th>
+                <th>Modified By</th>
+                <th>Total Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            @if (Model.Count <= 0)
+            {
+                <p class="text-center">No data available.</p>
+            }
+            else
+            {
+                <p class="text-center fs-3">Search Results between @ViewBag.StartDate to @ViewBag.Enddate</p>
+                @foreach (var sell in Model)
+                {
+
+                    <tr>
+                        <td>S-@sell.Id</td>
+                        <td>@sell.ProductName</td>
+                        <td>@sell.ClinetId</td>
+                        <td>@sell.Quantity</td>
+                        <td>@sell.CreatedAt</td>
+                        <td>@sell.CreatedBy</td>
+                        <td>@sell.ModifiedAt</td>
+                        <td>@sell.ModifiedBy</td>
+                        <td></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
