@@ -1,5 +1,5 @@
 # Sell_Management_MVC_CRUD_Project
-This project has been developed using .NET Core MVC. It facilitates the management of sales and products, allowing users to seamlessly perform tasks such as addition, deletion, updating, and viewing of both sales records and products. Additionally, the application offers a comprehensive reporting feature that enables users to generate reports by specifying a date range for their search.
+This project has been developed using .NET Core MVC. It facilitates the management of sales and products, allowing users to seamlessly perform tasks such as addition, deletion, updating, and viewing of both sales records and products. Additionally, the application offers a comprehensive reporting feature that enables users to generate reports by specifying a date range for their search. Also add a deleted list of sells.
 
 # Sections
 # 1. Product Management :
